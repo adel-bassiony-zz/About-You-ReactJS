@@ -1,0 +1,51 @@
+.input-container{
+    width: 100%;
+    border: 1px solid $secondary-gray;
+    border-radius: 5px;
+}
+
+.label{
+    color: $dark-blue;
+    font-size: 12px;
+    padding: 5px 0 0 10px;
+    margin: 0;
+}
+
+.input{
+    margin: 0;
+    border: 0;
+    padding: 0px 0 5px 10px;
+    color: $dark-blue;
+    font-size: 14px;
+
+    &::-webkit-input-placeholder {
+        color: #B6B6B6;
+      }
+      
+    &:-ms-input-placeholder {
+        color: #B6B6B6;
+    }
+      
+    &::placeholder {
+        color: #B6B6B6;
+    }
+}
+
+.btn-clear{
+    background: none;
+    border: 0;
+}
+
+.custom-select{
+    border: 0;
+    padding: 5px 0 5px 8px;
+    color: $dark-blue;
+    font-size: 14px;
+    border-radius: 0;
+    height: auto;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #B6B6B6;
+}
