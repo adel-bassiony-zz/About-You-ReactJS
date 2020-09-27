@@ -1,9 +1,7 @@
 import React from "react";
-import { useHistory, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const EmailVerification = props => {
-
-    let history = useHistory();
 
     return (
         <div className="container mt-5">
@@ -14,7 +12,7 @@ const EmailVerification = props => {
                 <div className="card_block mt-3">
                     <div className="row">
                         <div className="col-12 text-center">
-                            <img src="./assets/inbox.png" className="col-2 img-fluid mt-3" />
+                            <img src="./assets/inbox.png" className="col-2 img-fluid mt-3" alt="" title="" />
                             <h1 className="text-orange mt-3">We will send a message for this email</h1>
                             <h3 className="mt-2">example@example.com</h3>
                         </div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { connect } from "react-redux";
 import { Progress } from 'reactstrap';
 
@@ -19,7 +19,7 @@ const ProgressBar = props => {
                         <img src={props.progress >= 66 ? "./assets/image_complete.svg" : "./assets/image.svg"} className={props.progress > 66 ? "step__img complete" : "step__img"} alt="" title="" />
                     </div>
                     <div className={props.progress >= 100 ? "step complete" : "step"}>
-                        <img src={props.progress  >= 100 ? "./assets/shield_complete.svg" : "./assets/shield.svg"} className={props.progress == 100 ? "step__img complete" : "step__img"} alt="" title="" />
+                        <img src={props.progress  >= 100 ? "./assets/shield_complete.svg" : "./assets/shield.svg"} className={props.progress >= 100 ? "step__img complete" : "step__img"} alt="" title="" />
                     </div>
                 </div>
             </div>

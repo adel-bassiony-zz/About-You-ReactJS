@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import axios from "axios";
 import { useHistory, Link } from "react-router-dom";
@@ -6,11 +6,6 @@ import { useHistory, Link } from "react-router-dom";
 const Avatar = props => {
 
     let history = useHistory();
-
-    // ------------------------------------------------------
-    // React: States
-    // ------------------------------------------------------
-    const [image, setImage] = useState(null)
 
     // ------------------------------------------------------
     // Component Functions
@@ -42,6 +37,8 @@ const Avatar = props => {
             "user_extra_data[phone]": props.userName,
         }
 
+        console.log(requestBody)
+
         axios.post('https://id.safav2.io.safavisa.com/register', requestBody)
             .then(res => {
                 console.log(res)
@@ -50,8 +47,8 @@ const Avatar = props => {
             })
             .catch(err => {
                 console.log(err.response)
-                if (err.response.status == 422) {                    
-                } else if (err.response.status == 500) {
+                if (err.response.status === 422) {                    
+                } else if (err.response.status === 500) {
                 }
             })
         
@@ -72,7 +69,7 @@ const Avatar = props => {
                 <div className="card_block w-100 mt-3">
                     <div className="row">
                         <div className="col-12 text-center">
-                            <img src="./assets/add_profile_picture.png" className="col-3 img-fluid mt-3" />
+                            <img src="./assets/add_profile_picture.png" className="col-3 img-fluid mt-3" alt="" title="" />
                             <h3 className="mt-4 text-12">Only image with a size lower than 500 KB are allowed.</h3>
                         </div>
                     </div>

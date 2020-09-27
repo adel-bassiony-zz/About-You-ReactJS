@@ -67,7 +67,7 @@ const PersonalDetails = (props) => {
                                     <span className="text-12 px-2 mt-3">+20</span>
                                     <div className="border-left">
                                         <label className="w-100 label">Phone Number</label>
-                                        <input className="w-100 input" placeholder="Enter your phone number" onChange={(e) => setEmail(e.target.value)}/>
+                                        <input className="w-100 input" placeholder="Enter your phone number" onChange={(e) => setPhone(e.target.value)}/>
                                     </div>
                                 </div>
                             </div>
@@ -78,7 +78,7 @@ const PersonalDetails = (props) => {
                                 <div className="w-100">
                                     <input className="input col-11" type={showPassword ? "text" : "password"} placeholder="Enter your password" onChange={(e) => setPassword(e.target.value)} />
                                     <button className="col-1 btn-clear px-1 opacity-50" onClick={() => setShowPassword(!showPassword)}>
-                                        <img src={showPassword ? "./assets/invisible.png" : "./assets/visible.png"} width="20" className="img-fluid" />
+                                        <img src={showPassword ? "./assets/visible.png" : "./assets/invisible.png"} width="20" className="img-fluid" alt="" title="" />
                                     </button>
                                 </div>
                             </div>
@@ -89,7 +89,7 @@ const PersonalDetails = (props) => {
                                 <div className="w-100">
                                     <input className="input col-11" type={showConfirmPassword ? "text" : "password"} placeholder="Repeat your password" onChange={(e) => setPasswordConfirmation(e.target.value)} />
                                     <button className="col-1 btn-clear px-1 opacity-50" onClick={() => setShowConfirmPassword(!showConfirmPassword)}>
-                                        <img src={showConfirmPassword ? "./assets/invisible.png" : "./assets/visible.png"} width="20" className="img-fluid" />
+                                        <img src={showConfirmPassword ? "./assets/visible.png" : "./assets/invisible.png"} width="20" className="img-fluid" alt="" title="" />
                                     </button>
                                 </div>
                             </div>
@@ -98,7 +98,7 @@ const PersonalDetails = (props) => {
                 </div>
                 <div className="row no-gutters mt-3">
                     <div className="col-md-3">
-                        <a href="" className="link--dark text-14">Back To Login</a>
+                        <a href="/#" className="link--dark text-14">Back To Login</a>
                     </div>
                     <div className="col-md-4 offset-md-5 mt-3 mt-md-0">
                         <button className="w-100 btn btn-primary" onClick={submitPersonalDetails}>Next</button>
