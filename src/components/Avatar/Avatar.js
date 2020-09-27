@@ -77,7 +77,7 @@ const Avatar = props => {
 
                 <div className="row no-gutters mt-3">
                     <div className="col-md-2 offset-md-6 pr-1">
-                        <Link to="/" className="w-100 btn btn-secondary opacity-50">Back</Link>
+                        <Link to="/work_details" className="w-100 btn btn-secondary opacity-50">Back</Link>
                     </div>
                     <div className="col-md-4 mt-3 mt-md-0">
                         <button className="w-100 btn btn-primary" onClick={register}>Submit</button>
