@@ -42,8 +42,6 @@ const Avatar = props => {
         axios.post('https://id.safav2.io.safavisa.com/register', requestBody)
             .then(res => {
                 console.log(res)
-                // props.navigation.navigate('EmailVerification')
-                // props.saveProgressHandler(100)
             })
             .catch(err => {
                 console.log(err.response)
