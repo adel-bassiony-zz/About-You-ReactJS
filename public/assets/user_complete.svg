@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="491px" height="514px" viewBox="0 0 491 514" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>user_complete</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="user_complete" fill="#0070F9" fill-rule="nonzero">
+            <path d="M245.661,257.323 C110.386,257.323 0.328,367.382 0.328,502.656 C0.328,508.544 5.107,513.323 10.995,513.323 L480.328,513.323 C486.216,513.323 490.995,508.544 490.995,502.656 C490.995,367.381 380.936,257.323 245.661,257.323 Z" id="Path"></path>
+            <circle id="Oval" cx="245.661" cy="117.333" r="117.333"></circle>
+        </g>
+    </g>
+</svg>
